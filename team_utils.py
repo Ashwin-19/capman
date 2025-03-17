@@ -73,7 +73,7 @@ def heuristic_offense(agent,game_state,pos,goal,mode):
 
     h = d_goal
 
-    if mode=="flee":
+    if mode=="offense_f":
         if d_enemy==0 and not agent.power:
             return "blocked"
         if d_power==0:
